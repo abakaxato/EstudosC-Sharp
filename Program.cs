@@ -17,6 +17,9 @@ namespace OlaMundo
             double n6 = 1.1;
             string n7 = "caua";
             object n8 = "caua objeto";
+            int n9 = int.MinValue;
+            int n10 = int.MaxValue;
+            decimal n11 = decimal.MaxValue;
 
             Console.WriteLine(estado);
             Console.WriteLine(genero);
@@ -29,7 +32,9 @@ namespace OlaMundo
             Console.WriteLine(n6); 
             Console.WriteLine(n7); 
             Console.WriteLine(n8); 
-
+            Console.WriteLine(n9); 
+            Console.WriteLine(n10); 
+            Console.WriteLine(n11); 
 
         }
     }
