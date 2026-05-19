@@ -39,6 +39,37 @@ namespace OlaMundo
             Console.WriteLine($"\nRegistro: {idade} anos de idade, código: {codigo}, e gênero: {gen}");
             Console.WriteLine($"Medida com oito casas decimais{medida}\nArredondado(três casas decimais) : {medida:F3}");
             Console.WriteLine($"Separaor decimal invariante culture: {medida.ToString("F3",CultureInfo.InvariantCulture)}");
+
+            //Operadores de atribuição
+            int a = 2;
+            Console.WriteLine(a);
+            a += 2; // a = a + 2
+            Console.WriteLine(a);
+            a -= 2; // a = a - 2
+            Console.WriteLine(a);
+            a *= 2; // a = a * 2
+            Console.WriteLine(a);
+            a /= 2; // a = a / 2
+            Console.WriteLine(a);
+            a %= 2; // a = a % 2
+            Console.WriteLine(a);
+
+            int b = 5;
+            int bb = 10;
+            bb = ++b ; // Pré-Incremento b+1 vai para bb
+            Console.WriteLine(b);
+            bb = --b; // Pré-Incremento b-1 vai para bb
+            Console.WriteLine(b);
+            bb = b++; // Pós-Incremento bb recebe b depois b recebe b+1
+            Console.WriteLine(bb);
+            bb = b--; // Pós-Incremento bb recebe b depois b recebe b-1
+            Console.WriteLine(bb);
+
+            //Concatenação cumulativa de string
+            string c = "ABC";
+            Console.WriteLine(c);
+            c += "DEF";
+            Console.WriteLine(c);
         }
     }
 }
