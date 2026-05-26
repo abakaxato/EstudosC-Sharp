@@ -118,7 +118,6 @@ namespace OlaMundo
                     Console.WriteLine("Frase: " + frase +"\nX: " + x + "\nY: " + y);
                     Console.WriteLine("z: " + z +"\nA: " + a + "\nB: " + b + "\nC: " + b);
                  }
-                 */
 
                 //Recorte de String
                 {
@@ -127,6 +126,17 @@ namespace OlaMundo
                     string? p2 = vet[1];
                     string? p3 = vet[2];
                     Console.WriteLine($"\n{p1}\n{p2}\n{p3}");
+                }
+
+                //Formataçãoo de entrada*/
+                {
+                    /*int fInt = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    char fChar = char.Parse(Console.ReadLine());
+                    double fDouble = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    Console.WriteLine($"{fInt}\n{fChar}\n{fDouble}");*/
+
+                    string[] vetor = Console.ReadLine().Split(' ');
+                Console.WriteLine($"{vetor[0]},{char.Parse(vetor[1])},{int.Parse(vetor[2])},{double.Parse(vetor[3])}");
                 }
             }
         }
